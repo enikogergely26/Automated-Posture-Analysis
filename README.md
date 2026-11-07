@@ -66,6 +66,7 @@ Automated-Posture-Analysis/
 │
 ├── 2025 Analysis/
 │   ├── 2025 Analysis - Data Collection.ipynb
+│   ├── 2025 Analysis - Output Data Analysis.ipynb
 │   ├── All_player_results.xlsx
 │   ├── stats_with_team.csv
 │   └── Sample results/Judge, Aaron(592450)/
@@ -128,16 +129,17 @@ The consolidated Excel output includes:
 
 ### Performance Analysis
 
-The next step is to analyze the collected measurements and compare them with player performance.
+The `2025 Analysis - Output Data Analysis.ipynb` notebook explores the relationship between the average Back-Gluteal angle and offensive performance (OBP) across the analyzed qualified hitters (more than 500 plate appearances).
 
-The planned `2025 Analysis - Output Data Analysis.ipynb` notebook will focus on:
+The analysis includes:
+- Outlier removal and calculation of average Back-Gluteal angles.
+- Scatterplot visualizations comparing average angles with OBP across qualified hitters.
+- A separate scatterplot including players from selected stadiums only, where silhouette detection is not affected by background objects or spectators.
+- A separate scatterplot of selected hitters with high-quality angle measurements.
 
-- Removing outliers from the collected angle measurements.
-- Calculating average Back-Gluteal angles for qualified hitters (more than 500 plate appearances).
-- Comparing average posture angles with OBP.
-- Investigating potential relationships between batting posture and offensive performance.
+The results do not indicate a clear relationship between the average Back-Gluteal angle and OBP, either across the full sample or among the selected stadiums or hitters with more reliable measurements.
 
-The analysis aims to provide a broader understanding of whether posture measurements can help identify patterns associated with offensive performance across different hitters.
+These results suggest that the Back-Gluteal angle alone may not be sufficient to explain differences in offensive performance across players. However, it may still provide useful insights at the individual player level, potentially helping identify posture changes that coincide with changes in batting performance. Combined with additional biomechanical variables, it could offer a more detailed understanding of individual performance trends and help identify potentially meaningful changes over time.
 
 ## Technologies & Tools
 
